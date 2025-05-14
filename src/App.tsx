@@ -277,7 +277,7 @@ function CheckboxItem({ label }: { label: string }) {
     },
     onEnterPress: () => {
       setChecked(prev => !prev);
-      speak(`${label}, ${checked ? 'Checked' : 'Unchecked'}`);
+      speak(`${label}, ${!checked ? 'Checked' : 'Unchecked'}`);
     }
   });
 
